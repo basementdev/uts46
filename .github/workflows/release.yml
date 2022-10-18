@@ -4,7 +4,11 @@ env:
   NIF_DIRECTORY: "native/uts46_native"
 
 on:
-  push
+  push:
+    branches:
+      - main
+    tags:
+      - '*'
 
 defaults:
   run:
