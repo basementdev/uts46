@@ -21,7 +21,8 @@ defmodule Uts46.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:rustler, "~> 0.26.0"}
+      {:rustler, "~> 0.26.0"},
+      {:rustler_precompiled, "~> 0.5.2"}
     ]
   end
 end
