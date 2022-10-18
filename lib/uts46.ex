@@ -11,6 +11,27 @@ defmodule Uts46 do
     transitional_processing: false
   }
 
+  @doc """
+
+  Examples:
+
+  iex> Uts46.encode("aBcDeFg.eth")
+  "abcdefg.eth"
+
+  iex> Uts46.encode("aBcDeFg.eth",
+  ...>   unicode: true,
+  ...>   std3_rules: true,
+  ...>   transitional_processing: false
+  ...> )
+  "abcdefg.eth"
+
+  iex> Uts46.encode("abC_DeF.eth",
+  ...>   unicode: true,
+  ...>   std3_rules: true,
+  ...>   transitional_processing: false
+  ...> )
+  nil
+  """
   def encode(name, opts \\ []) do
     opts = opts |> Map.new()
     opts = Map.merge(@default_opts, opts)
