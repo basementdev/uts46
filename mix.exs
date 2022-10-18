@@ -1,10 +1,12 @@
 defmodule Uts46.MixProject do
   use Mix.Project
 
+  @version "0.2.0"
+
   def project do
     [
       app: :uts46,
-      version: "0.1.0",
+      version: @version,
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
       deps: deps()
