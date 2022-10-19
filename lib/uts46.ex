@@ -9,7 +9,7 @@ defmodule Uts46 do
 
   use RustlerPrecompiled,
     otp_app: :uts46,
-    crate: "uts46",
+    crate: "uts46_native",
     base_url: "https://github.com/basementdev/uts46/releases/download/v#{version}",
     force_build: System.get_env("RUSTLER_PRECOMPILATION_UTS46_BUILD") in ["1", "true"],
     version: version
