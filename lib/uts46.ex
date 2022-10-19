@@ -3,8 +3,6 @@ defmodule Uts46 do
   Documentation for `Uts46`.
   """
 
-  use Rustler, otp_app: :uts46, crate: "uts46_native"
-
   version = Mix.Project.config()[:version]
 
   use RustlerPrecompiled,
